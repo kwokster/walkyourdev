@@ -1,0 +1,11 @@
+@import "partials/variables";
+
+header {
+	background-color: $primaryColor;
+	h1 {
+		font-size: 8rem;
+		text-align: center;
+		padding: 3rem 0;
+		color: white;
+	}
+}

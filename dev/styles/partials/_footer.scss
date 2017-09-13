@@ -1,0 +1,11 @@
+@import "partials/variables";
+
+footer {
+	background-color: $primaryColor;
+	p {
+		font-size: 3rem;
+		color: white;
+		text-align: center;
+		padding: 1rem 0;
+	}
+}

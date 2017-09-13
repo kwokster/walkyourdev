@@ -1,0 +1,12 @@
+//General
+@import "partials/setup";
+@import "partials/global";
+@import "partials/variables";
+
+//Page sections
+@import "partials/header";
+@import "partials/footer";
+@import "partials/home";
+
+//Responsive
+@import "partials/mixins";

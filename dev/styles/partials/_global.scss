@@ -1,0 +1,83 @@
+@import "partials/variables";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $primaryFont;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 90%;
+}
+
+a {
+	text-decoration: none;
+	color: #98DFEA;
+}
+
+.wrapper__main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: #07BEB8;
+	padding: 5rem;
+	min-height: 100vh;
+}
+
+h2 {
+	padding-top: 3rem;
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+button {
+	margin-top: 5rem;
+	font-size: 2rem;
+	padding: 1rem;
+}
+
+input {
+	font-size: 3rem;
+	margin-bottom: 5rem;
+}
+
+.notes h2 {
+	padding-bottom:3rem;
+}
+
+.notePads {
+	list-style-type: none;
+	background: white;
+	border: 1px solid black;
+	margin-bottom: 2rem;
+	h3 {
+		font-size: 3rem;
+	}
+	p {
+		font-size: 2rem;
+	}
+}
+
+.display-note {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.analyzers {
+	button {
+		margin-right: 3rem;
+	}
+}
+
+canvas {
+	display: block;
+}

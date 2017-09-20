@@ -25,7 +25,7 @@ a {
 	text-align: center;
 	background-color: #07BEB8;
 	padding: 5rem;
-	min-height: 100vh;
+	min-height: 80vh;
 }
 
 h2 {
@@ -55,7 +55,8 @@ input {
 .notePads {
 	list-style-type: none;
 	background: white;
-	border: 1px solid black;
+	border: 3px solid black;
+	padding: 1rem;
 	margin-bottom: 2rem;
 	h3 {
 		font-size: 3rem;
@@ -65,11 +66,12 @@ input {
 	}
 }
 
-.display-note {
+.displayNote {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	margin: 2rem;
 }
 
 .analyzers {
@@ -81,3 +83,78 @@ input {
 canvas {
 	display: block;
 }
+
+.user-profile {
+	h3 {
+		padding: 2rem 0;
+	}
+	img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	}
+}
+
+.noteWrapper {
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 2rem;
+	@include respond-to ('medium') {
+		width: 100%;
+	}
+	h2 {
+		font-size: 23px;
+	}
+}
+
+.notesForm {
+	width: 50%;
+	margin: 0 auto;
+	@include respond-to ('medium') {
+		width: 100%;
+	}
+	@include respond-to ('small') {
+		width: 100%;
+	}
+	form {
+		display:flex;
+		flex-direction: column;
+	}
+	input, textarea {
+		margin-bottom: 2rem;
+		outline: transparent;
+		@include respond-to ('small') {
+			font-size: 20px;
+		}
+	}
+	textarea {
+		font-size: 2rem;
+		resize: none;
+	}
+	button {
+		margin: 0 auto;
+		border-radius: 5px;
+		background-color: #25283D;
+		box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		border: transparent;
+		color: white;
+		width: 30%;
+		@include respond-to ('small') {
+			width:auto;
+			font-size: 18px;
+		}
+	}
+}
+
+
+.results__timer {
+	justify-content: center;
+	height: 300px;
+	display: flex;
+	padding-top: 20px;
+}
+
+canvas:nth-of-type(2) {
+	position: static !important;
+}
+// no position absolute on canvas

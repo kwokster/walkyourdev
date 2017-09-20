@@ -157,7 +157,7 @@ a {
   text-align: center;
   background-color: #07BEB8;
   padding: 5rem;
-  min-height: 100vh; }
+  min-height: 80vh; }
 
 h2 {
   padding-top: 3rem;
@@ -181,24 +181,87 @@ input {
 .notePads {
   list-style-type: none;
   background: white;
-  border: 1px solid black;
+  border: 3px solid black;
+  padding: 1rem;
   margin-bottom: 2rem; }
   .notePads h3 {
     font-size: 3rem; }
   .notePads p {
     font-size: 2rem; }
 
-.display-note {
+.displayNote {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 2rem; }
 
 .analyzers button {
   margin-right: 3rem; }
 
 canvas {
   display: block; }
+
+.user-profile h3 {
+  padding: 2rem 0; }
+
+.user-profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; }
+
+.noteWrapper {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2rem; }
+  @media (max-width: 768px) {
+    .noteWrapper {
+      width: 100%; } }
+  .noteWrapper h2 {
+    font-size: 23px; }
+
+.notesForm {
+  width: 50%;
+  margin: 0 auto; }
+  @media (max-width: 768px) {
+    .notesForm {
+      width: 100%; } }
+  @media (max-width: 480px) {
+    .notesForm {
+      width: 100%; } }
+  .notesForm form {
+    display: flex;
+    flex-direction: column; }
+  .notesForm input, .notesForm textarea {
+    margin-bottom: 2rem;
+    outline: transparent; }
+    @media (max-width: 480px) {
+      .notesForm input, .notesForm textarea {
+        font-size: 20px; } }
+  .notesForm textarea {
+    font-size: 2rem;
+    resize: none; }
+  .notesForm button {
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #25283D;
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    border: transparent;
+    color: white;
+    width: 30%; }
+    @media (max-width: 480px) {
+      .notesForm button {
+        width: auto;
+        font-size: 18px; } }
+
+.results__timer {
+  justify-content: center;
+  height: 300px;
+  display: flex;
+  padding-top: 20px; }
+
+canvas:nth-of-type(2) {
+  position: static !important; }
 
 header {
   background-color: #25283D; }
@@ -207,6 +270,9 @@ header {
     text-align: center;
     padding: 3rem 0;
     color: white; }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 5rem; } }
 
 footer {
   background-color: #25283D; }
@@ -215,3 +281,38 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0; }
+
+.startButton {
+  border-radius: 5px;
+  background-color: #25283D;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border: transparent;
+  color: white; }
+
+.logButton {
+  border-radius: 5px;
+  background-color: orange;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border: transparent;
+  color: white;
+  margin-top: 2rem; }
+
+.removeNote {
+  margin: 2rem 0;
+  border-radius: 5px;
+  background-color: #25283D;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border: transparent;
+  color: white;
+  width: auto;
+  font-size: 15px; }
+
+.answer {
+  margin: 2rem 2rem;
+  border-radius: 5px;
+  background-color: #25283D;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border: transparent;
+  color: white;
+  width: auto;
+  font-size: 20px; }

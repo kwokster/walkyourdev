@@ -282,6 +282,9 @@ footer {
     text-align: center;
     padding: 1rem 0; }
 
+button {
+  outline: transparent; }
+
 .startButton {
   border-radius: 5px;
   background-color: #25283D;

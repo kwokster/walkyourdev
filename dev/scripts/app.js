@@ -113,7 +113,7 @@ class Notes extends React.Component {
 		return(
 			<div className='notes'>
 				<div className="noteWrapper"> 
-				  <h2>Log in to view and write notes on struggling developers!</h2>
+				  <h2>Log in to write about your developer/compare notes with other developer walkers!</h2>
 				  {this.state.user ?
 				    <button onClick={this.logout} className="logButton">Log Out</button>
 				    :

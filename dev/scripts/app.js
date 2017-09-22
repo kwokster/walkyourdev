@@ -74,7 +74,7 @@ class Notes extends React.Component {
 	  const notesRef = firebase.database().ref('notes');
 	  const note = {
 	    desc: this.state.currentNote,
-	    developerName: this.state.developerName
+	    developerName: this.state.user.displayName || this.state.user.email
 
 	  }
 	  notesRef.push(note);
@@ -130,8 +130,8 @@ class Notes extends React.Component {
 				      	<h2>Notes about developer:</h2>
 				          <section className='notesForm'>
 				            <form onSubmit={this.handleSubmit}>
-				              <input type="text" name="developerName" placeholder="Name of Developer" onChange={this.handleChange} value={this.state.developerName} required />
-				              <textarea type="text" name="currentNote" cols="30" rows="10" placeholder="Notes..." onChange={this.handleChange} value={this.state.currentNote} required />
+				              <input type="text" name="developerName" placeholder="Name of Developer Walker" onChange={this.handleChange} value={this.state.user.displayName || this.state.user.email} required />
+				              <textarea type="text" name="currentNote" cols="30" rows="10" placeholder="Name of Developer/Notes..." onChange={this.handleChange} value={this.state.currentNote} required />
 				              <button>Add Notes</button>
 				            </form>
 				          </section>
@@ -142,7 +142,8 @@ class Notes extends React.Component {
 				          				<li key={note.id} className="notePads">
 				          					<h3>{note.developerName}</h3>
 				          					<p>{note.desc}</p>
-				          					<button onClick={() => this.removeNote(note.id)}>Remove Note</button>
+				          					{note.developerName === this.state.user.displayName || note.developerName === this.state.user.email ?
+				          					<button onClick={() => this.removeNote(note.id)} className="removeNoteButton">Remove note</button> : null}
 				          				</li>
 				          			)
 				          		})}

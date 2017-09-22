@@ -15,7 +15,8 @@
 	margin-top: 2rem;
 }
 
-.removeNoteButton {
+.notePads {
+	button {
 	margin: 2rem 0;
 	border-radius: 5px;
 	background-color: #25283D;
@@ -24,6 +25,7 @@
 	color: white;
 	width: auto;
 	font-size: 15px;
+	}
 }
 
 .answer {

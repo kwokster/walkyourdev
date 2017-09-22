@@ -143,7 +143,7 @@ class Notes extends React.Component {
 				          					<h3>{note.developerName}</h3>
 				          					<p>{note.desc}</p>
 				          					{note.developerName === this.state.user.displayName || note.developerName === this.state.user.email ?
-				          					<button onClick={() => this.removeNote(note.id)} className="removeNoteButton">Remove note</button> : null}
+				          					<button onClick={() => this.removeNote(note.id)}>Remove note</button> : null}
 				          				</li>
 				          			)
 				          		})}

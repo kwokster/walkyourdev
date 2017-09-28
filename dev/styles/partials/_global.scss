@@ -72,6 +72,22 @@ input {
 	justify-content: center;
 	align-items: center;
 	margin: 2rem;
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		@include respond-to ('small') {
+			flex-direction: column;
+		}
+		li {
+			width: calc((100% / 2) - 20px);
+			margin: 10px;
+			@include respond-to ('small') {
+				width: 100%;
+				margin: 0 0 10px 0;
+			}
+		}
+	}
+
 }
 
 .analyzers {

@@ -195,6 +195,19 @@ input {
   justify-content: center;
   align-items: center;
   margin: 2rem; }
+  .displayNote ul {
+    display: flex;
+    flex-wrap: wrap; }
+    @media (max-width: 480px) {
+      .displayNote ul {
+        flex-direction: column; } }
+    .displayNote ul li {
+      width: calc((100% / 2) - 20px);
+      margin: 10px; }
+      @media (max-width: 480px) {
+        .displayNote ul li {
+          width: 100%;
+          margin: 0 0 10px 0; } }
 
 .analyzers button {
   margin-right: 3rem; }

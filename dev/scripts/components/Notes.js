@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import firebase, { auth, provider } from '../firebase.js';
 
 class Notes extends React.Component {
